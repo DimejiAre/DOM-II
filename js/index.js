@@ -98,3 +98,18 @@ headers.forEach((header)=>{
           }, 2000);
     })
 })
+
+//Animate anchor tags on drag
+navAnchors.forEach((anchor)=> {
+    anchor.addEventListener("drag", function(event) {
+        event.target.style.color = 'cornflowerblue';
+        event.target.style.transform = 'scale(1.2)';
+      });
+})
+
+navAnchors.forEach((anchor)=> {
+    anchor.addEventListener("dragend", function(event) {
+        event.target.style.color = 'initial';
+        event.target.style.transform = 'scale(1.0)';
+      });
+})
