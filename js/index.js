@@ -64,4 +64,15 @@ window.addEventListener('resize', () => {
         document.body.style.opacity = 1;
       }, 10000);
   });
+
+// Increase fontSize of buttons on wheel
+buttons.forEach((button)=>{
+    button.addEventListener('wheel', (event) => {
+        event.target.style.fontSize = '25px';
+
+        setTimeout(function() {
+            event.target.style.fontSize = 'initial';
+          }, 2000);
+    })
+})
   
