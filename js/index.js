@@ -87,4 +87,14 @@ document.addEventListener('scroll', () => {
           }, 2000);
     })
 })
-  
+
+// Change color of headers on mouse down
+headers.forEach((header)=>{
+    header.addEventListener('mousedown', (event)=>{
+        event.target.style.color = "green";
+
+        setTimeout(function() {
+            event.target.style.color = "initial";
+          }, 2000);
+    })
+})
