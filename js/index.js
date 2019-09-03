@@ -42,11 +42,18 @@ headerImage.addEventListener('dblclick', (event) => {
       }, 1000);
 })
 
+// change background Color of div to gray on click
+document.querySelector('.destination').addEventListener('click',(event) => {
+    console.log(event);
+    event.target.style.backgroundColor = "gray";
+})
+
 // Change background Color to orange on click
 buttons = document.querySelectorAll('.btn')
 buttons.forEach((button) => {
     button.addEventListener('click', (event) => {
         event.target.style.backgroundColor = 'orange';
+        event.stopPropagation();
 
         setTimeout(function() {
             event.target.style.backgroundColor = '#17A2B8';
