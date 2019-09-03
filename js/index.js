@@ -40,3 +40,15 @@ headerImage.addEventListener('dblclick', (event) => {
         event.target.style.display = 'initial';
       }, 1000);
 })
+
+// Change background Color to orange on click
+buttons = document.querySelectorAll('.btn')
+buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        event.target.style.backgroundColor = 'orange';
+
+        setTimeout(function() {
+            event.target.style.backgroundColor = '#17A2B8';
+          }, 1000);
+    })
+})
