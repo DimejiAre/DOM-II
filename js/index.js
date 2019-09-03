@@ -8,6 +8,7 @@ document.querySelectorAll('a').forEach((anchor)=>{
 })
 
 const navAnchors = document.querySelectorAll('a')
+const paragraphs = document.querySelectorAll('p')
 
 // Change anchor color to orange on mouse over
 navAnchors.forEach((anchor) => {
@@ -72,6 +73,17 @@ buttons.forEach((button)=>{
 
         setTimeout(function() {
             event.target.style.fontSize = 'initial';
+          }, 2000);
+    })
+})
+
+// change paragraph color on scroll
+document.addEventListener('scroll', () => {
+    paragraphs.forEach((p)=>{
+        p.style.color = 'cornflowerblue';
+
+        setTimeout(function() {
+            p.style.color = 'initial';
           }, 2000);
     })
 })
