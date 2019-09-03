@@ -30,3 +30,13 @@ document.addEventListener('keydown', () => {
           }, 1000);
     })
 })
+
+// Hide Header Image on double click
+headerImage = document.querySelector('header img')
+headerImage.addEventListener('dblclick', (event) => {
+    event.target.style.display = 'none';
+
+    setTimeout(function() {
+        event.target.style.display = 'initial';
+      }, 1000);
+})
