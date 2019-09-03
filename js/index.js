@@ -52,3 +52,16 @@ buttons.forEach((button) => {
           }, 1000);
     })
 })
+
+// Reduce Opacity of window on resize
+window.addEventListener('resize', () => {
+    if (!document.body.style.opacity) {
+      document.body.style.opacity = 1;
+    }
+    document.body.style.opacity = Number(document.body.style.opacity) * 0.9;
+
+    setTimeout(function() {
+        document.body.style.opacity = 1;
+      }, 10000);
+  });
+  
