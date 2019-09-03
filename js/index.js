@@ -19,3 +19,14 @@ navAnchors.forEach((anchor) => {
           }, 1000);
     })
 })
+
+// Change fontFamily of Headers on Key down
+const headers = document.querySelectorAll('h1,h2,h4')
+document.addEventListener('keydown', () => {
+    headers.forEach((header) => {
+        header.style.fontFamily = 'charcoal'
+        setTimeout(function() {
+            header.style.fontFamily = 'Indie Flower';
+          }, 1000);
+    })
+})
