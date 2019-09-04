@@ -120,3 +120,8 @@ navAnchors.forEach((anchor)=> {
         event.target.style.transform = 'scale(1.0)';
       });
 })
+
+// Add alert on header image load
+// headerImage.addEventListener('load', () => {
+//     window.alert('Header Image fully loaded')
+// })
